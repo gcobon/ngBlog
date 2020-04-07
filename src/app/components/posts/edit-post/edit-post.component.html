@@ -1,0 +1,34 @@
+<div class="new-post-container">
+    <form [formGroup]="editPostForm"> 
+        <!-- title-->
+        <mat-form-field>
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Title post" formControlName="titlePost">
+        </mat-form-field>
+         <!-- content-->
+        <mat-form-field>
+            <mat-label>Content</mat-label>
+            <input matInput placeholder="Content post" formControlName="contentPost">
+        </mat-form-field>
+        <!-- select tags-->
+        <mat-form-field >
+            <mat-label>Select</mat-label>
+            <mat-select formControlName="tagsPost" multiple>
+                <mat-option value="life">Life</mat-option>
+                <mat-option value="sport">Sport</mat-option>
+                <mat-option value="beauty">Beauty</mat-option>
+            </mat-select>
+        </mat-form-field>
+         <!-- file-->
+        <div class="container-input-file">
+            <label class="custom-file">
+                <mat-icon>cloud_upload</mat-icon>&nbsp;&nbsp;<span>Select image</span>
+                <input type="file" formControlName="imagePost" (change)="handleImage($event)">
+            </label>
+        </div>
+
+        <div class="container-buton">
+            <button mat-button (click)="editPost(editPostForm.value)" [mat-dialog-close]="true">Edit</button>
+        </div>
+    </form>
+</div>

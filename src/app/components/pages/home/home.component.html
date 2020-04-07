@@ -1,0 +1,10 @@
+<div class="container" *ngIf="posts$; else loading">
+    <mat-card class="post-card" *ngFor="let post of posts$">
+        <app-post [post]="post"></app-post>
+    </mat-card>
+</div>
+<ng-template #loading>
+    <div class="container-loading">
+        <mat-progress-spinner mode="indeterminate" [value]="99" color="primary"></mat-progress-spinner>
+    </div>
+</ng-template>

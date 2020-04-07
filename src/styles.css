@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fill-remaining-space{
+    flex: 1 1 auto ;
+}
+
+.active{
+    border: 1px solid #fff;
+}
+
+.container-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sport{
+    color: white !important;
+    min-height: 1rem !important;
+    background: rgba(69, 155, 252, 0.884) !important;
+    padding: 9px !important;
+}
+
+.life{
+    color: white !important;
+    min-height: 1rem !important;
+    background: rgba(46, 241, 78, 0.596) !important; 
+    padding: 9px !important;
+}
+
+.beauty{
+    color: white !important;
+    min-height: 1rem !important;
+    background: rgba(245, 69, 236, 0.61) !important; 
+    padding: 9px !important;
+}

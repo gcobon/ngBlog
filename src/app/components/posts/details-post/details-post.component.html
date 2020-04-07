@@ -1,0 +1,19 @@
+<div class="container" *ngIf="post; else loading">
+    <mat-card class="post-card" >
+        <img class="align-center" [src]="post.imagePost" />
+        <mat-card-content>
+            <mat-card-title>
+                {{ post.titlePost }}
+            </mat-card-title>
+            <p>
+                {{ post.contentPost }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+<ng-template #loading>
+    <div class="container-loading">
+        <mat-progress-spinner mode="indeterminate" [value]="99" color="primary"></mat-progress-spinner>
+    </div>
+</ng-template>

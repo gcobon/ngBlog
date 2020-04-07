@@ -1,0 +1,46 @@
+.new-post-container{
+    width: 400px;
+}
+
+form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+button{
+width: 100%;
+background: #451e89;
+color: white;
+}
+
+button:hover{
+    background: #673ab7;
+}
+
+mat-form-field{
+    margin: 5px;
+    width: 100%;
+}
+
+.container-input-file{
+    margin: 1rem 0;
+}
+
+.custom-file{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 0;
+    cursor: pointer;
+    width: 99%;
+}
+
+input[type='file']{
+    display: none;
+ }
+
+.container-button{
+    min-height: 80px;
+    width: 100%;
+}
